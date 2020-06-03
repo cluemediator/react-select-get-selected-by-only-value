@@ -43,7 +43,7 @@ function App() {
 
       <Select
         placeholder="Select Option"
-        value={data.filter(obj => obj.value === selectedValue)} // set selected value
+        value={data.find(obj => obj.value === selectedValue)} // set selected value
         options={data} // set list of the data
         onChange={handleChange} // assign onChange function
       />
